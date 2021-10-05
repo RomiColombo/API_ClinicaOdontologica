@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listar Pacientes</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+
+    <link rel="stylesheet" href="/style/listar.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">BE I</a>
+        <nav>
+            <ul>
+                <li><a href="./listarOdontologo.html">Odontólogos</a></li>
+                <li><a href="./agregarPaciente.html">Pacientes</a></li>
+                <li><a href="./listarTurno.html">Turnos</a></li>
+            </ul>
+        </nav>
+        <div>
+            <p>Hola Usuario</p>
+        </div>
+    </header>
+    <main>
+
+        <div class="tituloTabla">
+            <h6>Pacientes</h6>
+        </div>
+        <div class="table-responsive">
+            <table class="tabla" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Apellido</th>
+                        <th>Nombre</th>
+                        <th>DNI</th>
+                        <th>Email</th>
+                        <th>Fecha Alta</th>
+                        <th>Domicilio</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="./js/boton.js"></script>
+    <script src="./js/get_paciente.js"></script>
+    <script src="./js/put_paciente.js"></script>
+    <script src="./js/delete_paciente.js"></script>
+
+</body>
+
+</html>

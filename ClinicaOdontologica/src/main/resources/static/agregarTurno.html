@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Turno</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/style/agregar.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">BE I</a>
+        <nav>
+            <ul>
+                <li><a href="./agregarOdontologo.html">Odontólogos</a></li>
+                <li><a href="./listarPaciente.html">Pacientes</a></li>
+                <li><a href="./listarTurno.html">Turnos</a></li>
+            </ul>
+        </nav>
+        <div>
+            <p>Hola Usuario</p>
+        </div>
+    </header>
+    <main>
+        <form action="POST" class="agregarTurno" id="formTurno">
+            <div>
+                <h3>Nuevo Turno</h3>
+            </div>
+            <div>
+                <label>
+                    <input type="text" name="fecha" id="fecha" placeholder="Fecha: AA/MM/DD">
+                </label>
+                <label>
+                    Odontólogo
+                    <select id=odontologo>
+                        <!-- <option value="" selected disabled hidden>Seleccione un odontologo</option> -->
+                        <!-- <option value="Romina" selected>Romina</option>
+                        <option value="Bruno">Bruno</option>
+                        <option value="Camila">Camila</option> -->
+                    </select>
+                </label>
+                <label>
+                    Paciente
+                    <select id=paciente>
+                        <!-- <option value="Luca" selected>Luca</option>
+                        <option value="Felipe">Felipe</option>
+                        <option value="Emmanuel">Emmanuel</option> -->
+                    </select>
+                </label>
+
+            </div>
+           
+            <div>
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </main>
+    <script src="./js/post_turno.js"></script>
+</body>
+</html>

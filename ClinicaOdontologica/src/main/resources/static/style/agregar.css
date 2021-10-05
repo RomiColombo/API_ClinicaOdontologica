@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Puritan&family=Quattrocento&display=swap');
+@import url('./header.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Puritan', sans-serif;    
+}
+
+body{
+    background: url(../img/agregar.png);
+    background-size: cover;
+}
+
+form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 80vh;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 30em;
+    margin: 30px calc(50% - 15em); 
+    padding: 2em 4em;
+    background-color: white;
+}
+
+.agregarOdontologo div , .agregarTurno div{
+    height: 30%;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+}
+
+h3{
+    font-size: 30px;
+    font-weight:lighter;
+    text-transform:uppercase;
+}
+
+input{
+    width: 300px;
+    border: transparent;
+    height: 40px;
+    font-size: 15px;
+    border-bottom: 1px solid rgba(109, 109, 109, 0.685);
+    outline: none;
+}
+
+select{
+    width: 200px;
+    height: 40px;
+}
+
+::placeholder{
+    font-size: 15px;
+    line-height: 40px;
+}
+
+button{
+    background: linear-gradient(180deg, #787D8D 0%, #717FB3 100%);
+    color: white;
+    border-radius: 3px;
+    padding: 15px;
+    width: 95px;
+    border: transparent;
+    font-weight: 400;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover{
+    background: linear-gradient(180deg, #707483 0%, #6672a0 100%);
+}
+
+button:active {
+    position: relative;
+    top: 1px;
+}
